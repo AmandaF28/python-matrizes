@@ -7,7 +7,6 @@ import time
 import logging
 import threading
 import multiprocessing
-# import Queue
 
 def cria_matriz(linhas, colunas):
   A = []

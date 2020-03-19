@@ -37,7 +37,7 @@ if __name__ == '__main__':
     print("{}: Multiplicando matrizes".format(time.strftime('%c')))
     queue = multiprocessing.JoinableQueue()
     queue_resultados = multiprocessing.JoinableQueue()
-    for i in range(3):
+    for i in range(2):
         worker = multiprocessing.Process(target=multiplica_linha_coluna, args=(queue, queue_resultados, matrizA, matrizB,))
         worker.daemon = True
         worker.start()
